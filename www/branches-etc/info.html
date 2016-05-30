@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <h1 class="text-center">Branches and other fun stuff!</h1>
+    <h2>WTF is a branch? Do I need a tree?</h2>
+    <div class="answer">
+        <p>Nope! You don't need to go buy a tree (for this lesson at least). A branch is basically something that contains multiple commits.
+        You need them to divide up tasks you're working on. For example, you'd have a main branch that everyone works off of and then several
+        other branches branched off for features like adding another screen, implementing login and such. </p>
+    </div>
+    <h2>Let's get started!</h2>
+    <div class="answer">
+        <p>Let's start off from the last example and type <code>git branch -b fun-branch</code></p>
+        <p>This basically creates a new branch off of your master branch. Basically, it represents
+        that we're starting to work on something. Now go ahead and open up your hello.txt and add something to it.
+        Now, go ahead and create a commit! Done? That's it! You've created a branch with a commit!</p>
+    </div>
+    <h2>What if I want to make it a part of the main branch?</h2>
+    <div class="master">
+        <p>Excellent question! Go ahead and checkout the master branch by typing <code>git checkout master</code>.
+        Now, type <code>git merge fun-branch</code> and you should have your latest commits on the master branch!</p>
+    </div>
+    <h2>Let's get into what we just did.</h2>
+    <p class="answer">When you are working independently on something (a feature or whatever), the first protocol is to create a new branch.
+    This is to separate your work from whatever is on master. Now, you must also understand that each branch has a root and typically on 
+    projects, the root is a commit on the master branch. Once you're done with your work you need to "squash" it and then get it merged into master.</p>
+    <h2>But I don't like squash...</h2>
+    <p class="answer">Good, because I don't either. Usually after you're done with the featuer you're working on, you end up with this long chain of commits on your branch.
+    That's usually not fun to merge, so you need to combine the commits into one. This is called "squashing"</p>
+    <p>Let's create another commit. Add another line to hello.txt and then commit it. Now, type <code>git rebase -i master</code></p>
+    <p>The i is for interactive and master is what you want to rebase onto. We usually want to rebase onto master. Now, you should get some editor to pop up. Now, leave one pick, and replace the rest with 
+    s.</p>
+    <img class="center-block" src="/squash-1.png">
+</div>

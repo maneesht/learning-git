@@ -1,0 +1,36 @@
+<html ng-app="learn-git">
+    <head>
+        <link href="lib/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+        <link href="styles.css" type="text/css" rel="stylesheet"/>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-route/angular-route.js"></script>
+        <script src="introduction/introduction.js"></script>
+        <script src="app.js"></script>
+        <script src="home/home.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" style="color: white; background-color: #43A047; height: 100%; overflow-y: auto">
+                    <h1 class="title">Learning Git</h1>
+                    <div>
+                        <a href="#/introduction">1. Introduction</a>
+                    </div>
+                    <div>
+                        <a href="#/getting-started">2. Getting Started</a>
+                    </div>
+                    <div>
+                        <a href="#/making-commits">3. Making Commits</a>
+                    </div>
+                    <div>
+                        <a href="#/branches-etc">4. Branches and other fun stuff</a>
+                    </div>
+                </div>
+                <div class="col-md-9" style="height: 100%; overflow-y: auto">
+                    <ng-view></ng-view>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

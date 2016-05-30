@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <h1 class="text-center"> Making Commits</h1>
+    <h2>Getting your environment set up</h2>
+    <div class="answer">
+        <p>Well, now that you know what a commit is, let's get started with a project!
+        As far as what you need to get started, it's not much. Go ahead and create a new directory, or find an existing one, and open up a command prompt or terminal.
+        CD into the directory you want git set up, and then type <code>git init</code>. Then you're done with the set up!</p>
+    </div>
+    <h2>Making your first commit.</h2>
+    <div class="answer">
+        <p>Alright, so go ahead and create a hello.txt file.</p>
+        <p>Now type <code>git status</code> and you should get a message similar to the following: </p>
+        <img src="/git-status.png" class="img-responsive"/>
+        <h4>What does this mean?</h4>
+        <p>This means that from the last time there was a commit, an untracked (new) file has shown up. To add this you just type
+        <code>git add -A</code></p>
+        <p>The parameter <code>add</code> is basically adding something to git. <code>-A</code> means "all"</p>
+        <p>If you type <code>git status</code> again, you should get: </p>
+        <img src="/git-status-2.png" class="img-responsive"/>
+        <p>Now you're ready to commit!</p>
+        <p>Now just type <code>git commit -am "This is my first commit!"</code></p>
+        <h4>Let's break this down.</h4>
+        <ul>
+            <li>The <code>-am</code> means two things: all and message</li>
+            <li>What is in quotes is the message</li>
+        </ul>
+        <p>After <code>git status:</code></p>
+        <img src="/git-status-3.png" class="img-responsive"/>
+    </div>
+</div>
