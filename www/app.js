@@ -2,15 +2,9 @@ angular.module("learn-git",
         [
         'ngRoute',
         'part.learn-git',
-        'learn-git.home'
         ])
     .config(function($routeProvider, $locationProvider) {
         $routeProvider
-            .when("/home", {
-                templateUrl: "/home/home.html",
-                controller: "HomeCtrl",
-                controllerAs: "hc"
-            })
             .when("/introduction", {
                 templateUrl: "/introduction/introduction.html",
                 controller: "Part1Controller"
@@ -25,6 +19,6 @@ angular.module("learn-git",
                 templateUrl: "branches-etc/info.html"
             })
             .otherwise({
-                redirectTo: "/home"
+                redirectTo: "/introduction"
             });
     });
