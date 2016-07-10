@@ -4,17 +4,24 @@
     <div class="answer">
         <p>Nope! You don't need to go buy a tree (for this lesson at least). A branch is basically something that contains multiple commits.
         You need them to divide up tasks you're working on. For example, you'd have a main branch that everyone works off of and then several
-        other branches branched off for features like adding another screen, implementing login and such. </p>
+        other branches for adding features like adding another screen, implementing login and such. </p>
     </div>
     <h2>Let's get started!</h2>
     <div class="answer">
         <p>Let's start off from the last example and type <code>git checkout -b fun-branch</code></p>
-        <p>This basically creates a new branch off of your master branch. Basically, it represents
-        that we're starting to work on something. Now go ahead and open up your hello.txt and add something to it.
+        <p>This  branches off of your master branch. Basically, it represents
+        that we're starting to work on some new functionality. Now go ahead and open up your hello.txt and add something to it.
         Now, go ahead and create a commit! Done? That's it! You've created a branch with a commit!</p>
     </div>
+    <h2>That's cool and all, but what happened to my changes on the master branch?</h2>
+    <div class="answer">
+        <p>Well, those changes are still on your master branch, and since you branched off of master, your current branch contains those changes as well as
+        your new ones. </p>
+        <p class="note">Note: whenever you branch off, you're actually branching off of a commit. This means that you will have changes from that commit on your new branch.
+        </p>
+    </div>
     <h2>What if I want to make it a part of the main branch?</h2>
-    <div class="master">
+    <div class="answer">
         <p>Excellent question! Go ahead and checkout the master branch by typing <code>git checkout master</code>.
         Now, type <code>git merge fun-branch</code> and you should have your latest commits on the master branch!</p>
     </div>
